@@ -1,29 +1,5 @@
----
-title: is1ab Hackthebox筆記 - baby nginxatsu
-tags: [is1ab-note]
-
----
-
 ##### tags: `is1ab-note`
 # is1ab Hackthebox筆記 
-
-<style>
-.red {
-  color: red;
-}
-.blue {
-  color: blue;
-}
-.purple {
-  color: #7D3382;
-}
-.light_purple {
-  color: #810cf5;
-}
-</style>
-
-<span class=""></span>
-
 
 ## <span class="red">**baby nginxatsu (Easy)**</span>
 
@@ -158,6 +134,6 @@ tags: [is1ab-note]
 * **如果可以登入網站就先登入，不要先以攻擊為方向。先登入一般使用者或許也有機會能夠從內部漏洞直接提權**
 
 * **目前不知道<span class="red">為何第一次以URL的方式搜尋<span class="light_purple">/storage</span>會被擋下來?</span>**
-    - <span class="red">**更新1</span>：目前可能的原因是當我第一次在做URL的訪問時，他會<span class="blue">進行++redirect++</span>把我導向port80(或是任一個非原本port的網站)，作為一種簡單的防禦機制**
+    - <span class="red">**更新1</span>：目前可能的原因是當我第一次在做URL的訪問時，他會<span class="blue">進行redirect</span>把我導向port80(或是任一個非原本port的網站)，作為一種簡單的防禦機制**
 
 * **Index of讓我想到<span class="purple">Google Hacking Database</span>，在<span class="purple">Google Hacking Database</span>上有提供很多Index of有關的Exploit(像是直接在Google下 <span class="light_purple">Index of /etc/passwd</span> 就會有網站的一些跟密碼有關資訊被顯示出來)。現在看來其中一項因素應該跟autoindex設定成on有關**
