@@ -1,2 +1,2 @@
 # HackTheBox: Pilgrimage writeup
-## https://github.com/Chw41/My-CTF-Challenges/blob/Master/HackTheBox/HackTheBox_%20Pilgrimage%20Writeup.md
+## https://github.com/Chw41/HackTheBox/blob/main/HackTheBox_%20Pilgrimage%20Writeup.md
