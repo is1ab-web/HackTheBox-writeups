@@ -156,7 +156,7 @@ sudo docker run -p 8080:8080 --restart=on-failure jenkins/jenkins:lts-jdk17
 
 <img width="641" height="305" alt="image" src="https://github.com/user-attachments/assets/def31001-d357-4ca2-8d86-7d2d94cbe091" />
  
-24.	建立一個使用者名稱為Yiming，密碼為Password，全名為Eric Lin
+24.	建立一個使用者名稱為，密碼為Password，全名為Eric Lin
 
 <img width="470" height="302" alt="image" src="https://github.com/user-attachments/assets/f55376a0-b33f-4300-8861-01575f4e7c50" />
  
@@ -182,11 +182,11 @@ docker exec -it 【容器ID】bash
  <img width="621" height="138" alt="image" src="https://github.com/user-attachments/assets/82554641-1665-4fdd-82b5-ed3376f1e5f9" />
 <img width="613" height="237" alt="image" src="https://github.com/user-attachments/assets/b190be63-6c7b-4962-8b26-e9865ef9f570" />
 
-30.	進入到users目錄，看到有一個目錄開頭是使用者名稱，及一個users.xml檔案。users.xml檔案內容是紀錄所在資料夾的名稱，另外使用者帳號的名稱全部改成小寫，因此有可能儘管我們使用者輸入Yiming，但是系統將帳號名稱改為yiming。
+30.	進入到users目錄，看到有一個目錄開頭是使用者名稱，及一個users.xml檔案。users.xml檔案內容是紀錄所在資料夾的名稱，另外使用者帳號的名稱全部改成小寫。
 
 <img width="623" height="284" alt="image" src="https://github.com/user-attachments/assets/e46cfae7-121c-4738-a7d6-9fffe6ea8bd4" />
 
-31.	登入http://127.0.0.1:8080，確認登入的試用者帳號為yiming，而不是輸入的Yiming。
+31.	登入http://127.0.0.1:8080，確認登入的使用者帳號。
 
  <img width="633" height="109" alt="image" src="https://github.com/user-attachments/assets/542f0ac8-4cf4-4e87-b9a3-e77b0c90f6fb" />
 <img width="637" height="37" alt="image" src="https://github.com/user-attachments/assets/ab2fd2e6-8cc3-44c8-b8fc-a4a97934106c" />
