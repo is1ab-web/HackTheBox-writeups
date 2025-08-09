@@ -8,11 +8,7 @@ HackTheBox: Builder
 
 ## Topic
 
-### Lab
-- HackTheBox: \
-https://app.hackthebox.com/machines/Builder
-
- 
+### Lab 
 1.	輸入sudo openvpn lab_iming0727.ovpn ，開啟VPN連線到HTB，並確認VPN連線的IP
  
 
@@ -356,7 +352,6 @@ println( hudson.util.Secret.decrypt("{AQAAABAAAAowLrfCrZx9baWliwrtCiwCyztaYVoYdk
 
 
 59.	將私鑰內容放到pk.txt。
- 
 
 60.	設定pk.txt權限，並利用pk.txt，以root身分利用SSH登入系統。
  
