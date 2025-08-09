@@ -9,6 +9,9 @@ HackTheBox: Builder
 ## Topic
 
 ### Lab 
+
+<img width="345" height="252" alt="image" src="https://github.com/user-attachments/assets/91660085-5d89-4afa-82ed-72ecb5fd482e" />
+
 1.	輸入sudo openvpn lab_iming0727.ovpn ，開啟VPN連線到HTB，並確認VPN連線的IP
  
 
