@@ -5,7 +5,7 @@ HackTheBox: Blue
 
 ### Lab
 #### HackTheBox: 
-[https://app.hackthebox.com/machines/Blue](https://app.hackthebox.com/machines/Blue)
+https://app.hackthebox.com/machines/Blue
 
  <img width="367" height="140" alt="image" src="https://github.com/user-attachments/assets/12eb69b5-e087-428f-a63a-3bec71b754ed" />
 
@@ -19,12 +19,12 @@ nmap -A -p- --min-rate=1000 -T4 --script vuln 10.10.10.40
 <img width="619" height="392" alt="image" src="https://github.com/user-attachments/assets/f46dd2de-6401-4e49-b922-73994f4214ab" />
 
 3.	透過下列指令檢查靶機開放的SMB分享，可以使用nmap或smbclient確認。
- 1.	nmap --script smb-enum-shares.nse -p445 10.10.10.40
+- 1.	nmap --script smb-enum-shares.nse -p445 10.10.10.40
 
 <img width="625" height="489" alt="image" src="https://github.com/user-attachments/assets/ae2dd635-3ea2-43ce-a4ff-ce53d9bbc56d" />
 <img width="529" height="222" alt="image" src="https://github.com/user-attachments/assets/6974444d-0bf4-49f4-b5a5-4f1efd013f43" />
   
- 2.	smbclient -L 10.10.10.40
+- 2.	smbclient -L 10.10.10.40
 
  <img width="659" height="221" alt="image" src="https://github.com/user-attachments/assets/61526d26-7fd5-4192-bed9-4fcbb1464162" />
 
